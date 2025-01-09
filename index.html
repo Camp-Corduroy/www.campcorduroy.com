@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAMP CORDUROY - Official Music Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">CAMP CORDUROY</div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="music.html">Music</a>
+                <a href="merch.html">Merch</a>
+                <a href="about.html">About</a>
+                <button class="sign-up" onclick="openSignupModal()">Sign Up</button>
+                <button class="login" onclick="openLoginModal()">Log In</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Coming Soon</h1>
+            <p>New music dropping summer 2024</p>
+            <button class="notify-me">Notify Me</button>
+        </section>
+
+        <section class="featured">
+            <h2>Featured Releases</h2>
+            <div class="release-grid">
+                <!-- Placeholder for upcoming releases -->
+                <div class="release-card">
+                    <div class="placeholder-img"></div>
+                    <h3>Upcoming Album</h3>
+                    <p>Summer 2024</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <h2>Join the Journey</h2>
+            <p>Get exclusive updates and early access to new releases</p>
+            <form id="subscribe-form">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-spotify"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2024 CAMP CORDUROY. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Sign Up</h2>
+            <form id="signup-form">
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
