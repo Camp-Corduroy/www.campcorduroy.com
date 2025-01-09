@@ -23,16 +23,57 @@
     </header>
 
     <main>
+        <section class="music-player-section">
+            <div class="music-player">
+                <div class="player-art">
+                    <img src="placeholder-album.jpg" alt="Album Art" id="albumArt">
+                    <div class="player-overlay">
+                        <button id="prevTrack"><i class="fas fa-backward"></i></button>
+                        <button id="playPause"><i class="fas fa-play"></i></button>
+                        <button id="nextTrack"><i class="fas fa-forward"></i></button>
+                    </div>
+                </div>
+                <div class="player-info">
+                    <div class="track-info">
+                        <h3 id="trackTitle">Track Title</h3>
+                        <p id="artistName">CAMP CORDUROY</p>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="time-stamps">
+                            <span id="currentTime">0:00</span>
+                            <span id="duration">0:00</span>
+                        </div>
+                    </div>
+                    <div class="controls">
+                        <button id="shuffle"><i class="fas fa-random"></i></button>
+                        <button id="volumeControl">
+                            <i class="fas fa-volume-up"></i>
+                            <div class="volume-slider">
+                                <input type="range" min="0" max="100" value="100" id="volumeRange">
+                            </div>
+                        </button>
+                        <button id="repeat"><i class="fas fa-redo"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="music-section">
             <h1>Music</h1>
             <div class="music-grid">
                 <div class="album-card">
-                    <div class="placeholder-img"></div>
-                    <h3>Upcoming Album</h3>
-                    <p>Release Date: Summer 2024</p>
+                    <div class="track-art" data-track="track1.mp3" data-title="Track 1">
+                        <div class="placeholder-img"></div>
+                        <button class="play-button"><i class="fas fa-play"></i></button>
+                    </div>
+                    <h3>Track 1</h3>
+                    <p>Release Date: Summer 2025</p>
                     <button class="pre-save">Pre-save</button>
                 </div>
-                <!-- Add more album cards as needed -->
+                <!-- Add more track cards as needed -->
             </div>
         </section>
     </main>
